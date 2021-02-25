@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <title>Virtual keyboard</title>
+</head>
+<body>
+    <form id="f1" class="f1">
+        <div class="header">
+            <span class="title">Create your account</span>
+        </div>
+        <div class="content">
+            <label >First name</label>
+            <input type="text" placeholder="type here..." name="firstName">
+            <label> Second name</label>
+            <input type="text" placeholder="type here..." name="lastName">
+            <label>Email adress</label>
+            <input type="text" placeholder="enter email" name="email">
+            <div class="radio">
+                <input type="radio" name="gend" id="man" value="man" onclick="maleFun()">
+                <label for="man">man</label>
+                <input type="radio" name="gend" id="woman" value="woman" onclick="femaleFun()">
+                <label for="woman">woman</label>
+            </div>
+            <label for="">Position</label>
+            <select name="position" id="position">
+                <option value="Choose">Choose..</option>
+                <option value="Frontend">Frontend</option>
+                <option value="Backend">Backend</option>
+                <option value="QC/QA">QC/QA</option>
+            </select>
+            
+            <div class="terms">
+                <input type="checkbox" id="agree" onchange="fun1()" style="margin-right: 10px;">
+                <label for="agree">I agree all stetements in Terms of service</label>
+            </div>
+            <button id="sign" onclick="fun2()" type="button">Sign Up</button>
+        </div>
+    </form>
+	<form id="f2" class="f2">
+        
+        <div class="secondContent">
+            <img src="img/male1.png" alt="" id="logo">
+            <div class="textContent">
+                <div id="firstnm" class="firstnm">
+    
+                </div>
+                <div class="mail" id="mail">
+                    
+                </div>
+                <div class="pos" id="pos">
+
+                </div>
+                <button id="out" type="submit" onclick="signOut()">Sign Out</button>
+            </div>
+        </div>
+    </form>
+    <script src="script.js" async defer></script>
+</body>
+</html>
